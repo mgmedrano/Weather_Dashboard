@@ -1,23 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./style.css" />
-    <title>Weather Dashboard</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css" />
+  <title>Weather Dashboard</title>
 </head>
 <body>
-    <h2 class="weather"> Weather Dashboard</h2>
-    <div class="container-fluid">
-    <div class="mb-3">
-        <label for="formGroupExampleInput" class="form-label">Search for a City </label>
-        <input type="text" class="form-control" id="formGroupExampleInput">
-        <button id="search">Search</button>
+  <div class="jumbotron container-fluid mt-2 text-center p-2" style="background-color: rgb(124, 121, 117); color: white;">
+    <h1>Weather Dashboard</h1>      
+  </div>
+    
+  <div class="container">
+    <div class="row">
+      <div class="col-3" id="nav">
+        <div id="search">
+          <h3>Search for a City:</h3>
+            <input type="text" placeholder="City" id="search-city" value="Enter city here...">
+            <button class="search col-sm-2"><i class="fas fa-search"></i></button>
+            <br>
+    </div>
+    
+    <div id="past-searches"></div>
       </div>
+
+    <div class="col-9" id="content">
+      <div id="weatherDisplay">
+        <h1><span id="city"></span> <img id="weather-image" src=""> <span id="date"></span></h1>
+          <p>Temperature: <span id="temp"></span></p>
+          <p>Wind Speed: <span id="windSpeed"></span></p>
+          <p>Humidity: <span id="humidity"></span></p>
+          <p>UV Index: <span id="uvIndex"></span></p>
+    </div>  
+
+    <h2>5-Day Forecast:</h2>
+    
+    <div class="row row-cols-5" id="forecast">
+      <div class="col" id="fore1">
+          <p><img id="foreImage1" src=""> <span id="fore1"></span></p>
+          <p>Temperature: <span id="temp1"></span></p>
+          <p>Humidity: <span id="humid1"></span></p>
+    </div>
+    
+      <div class="col" id="fore2">
+          <p><img id="foreImage2" src=""> <span id="fore2"></span></p>
+          <p>Temperature: <span id="temp2"></span></p>
+          <p>Humidity: <span id="humid2"></span></p>
+      </div>
+      
+      <div class="col" id="fore3">
+          <p><img id="foreImage3" src=""> <span id="fore3"></span></p>
+          <p>Temperature: <span id="temp3"></span></p>
+          <p>Humidity: <span id="humid3"></span></p>
+      </div>
+      
+      <div class="col" id="fore4">
+          <p><img id="foreImage4" src=""> <span id="fore4"></span></p>
+          <p>Temperature: <span id="temp4"></span></p>
+          <p>Humidity: <span id="humid4"></span></p>
+      </div>
+
+      <div class="col" id="fore5">
+          <p><img id="foreImage5" src=""> <span id="fore5"></span></p>
+          <p>Temp: <span id="temp5"></span></p>
+          <p>Humidity: <span id="humid5"></span></p>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+  <script src="./script.js"></script>
 </body>
-<script src="./script.js"></script>
 </html>

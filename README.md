@@ -19,6 +19,6 @@ As a traveler, I want the ability for the traveler to see the weather outlook fo
 
 ### Repository  & Webpage
 
-- URL: 
-- GitHut Repository: 
+- URL: https://mgmedrano.github.io/Weather_Dashboard/
+- GitHut Repository: https://github.com/mgmedrano/Weather_Dashboard
 
