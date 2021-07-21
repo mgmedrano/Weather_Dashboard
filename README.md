@@ -1,4 +1,4 @@
-# Weather_Dashboard
+# Weather_Dashboard (incomplete)
 
 ## Background
 
@@ -14,7 +14,7 @@ As a traveler, I want the ability for the traveler to see the weather outlook fo
 
 ## Weather Dahsboard Preview
 
-> Preview ![Weather Dashboard](Assets/Work_Day_Scheduler_Prev.png) 
+> Preview ![Weather Dashboard](Assets/Weather_Dashboard.png) 
 
 
 ### Repository  & Webpage
